@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>IT Network Registration</title>
+</head>
+
+<body>
+
+<h1>Реєстрація в соціальній мережі для IT-фахівців</h1>
+
+<form action="" method="get">
+
+    <fieldset>
+        <legend>Обліковий запис</legend>
+
+        <label for="username">Ім'я користувача:</label>
+        <input type="text" id="username" name="username" value="" placeholder="Введіть ім'я користувача" required tabindex="1"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" value="" placeholder="example@gmail.com" autocomplete="off" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}" required tabindex="2"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" value="" placeholder="Мін 6 символів, маленькі та великі літери + спецсимволи" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6,}$" required tabindex="3"><br><br>
+
+        <label for="password">Підтвердіть пароль:</label>
+        <input type="password" id="confirm-password" name="confirm-password" value="" placeholder="Підтвердіть пароль" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{6}$" required tabindex="3"><br><br>
+
+        <label for="phone">Мобільний номер:</label>
+        <input type="tel" id="phone" name="phone" value="" placeholder="+380XXXXXXXXX" pattern="\+380[0-9]{9}" required tabindex="4"><br><br>
+
+        <label for="birthdate">Дата народження:</label>
+        <input type="date" id="birthdate" name="birthdate" value="" tabindex="5">
+
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Особисті дані</legend>
+        <label for="about">Про себе:</label><br>
+        <textarea id="about" name="about" placeholder="Коротко розкажіть про себе" rows="5" cols="50" tabindex="6"></textarea>
+
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Професійна інформація</legend>
+        <p>Ваш рівень у програмуванні:</p>
+        <input type="radio" id="junior" name="level" value="junior" tabindex="7">
+        <label for="junior">Junior</label>
+        <input type="radio" id="middle" name="level" value="middle" checked tabindex="8">
+        <label for="middle">Middle</label>
+        <input type="radio" id="senior" name="level" value="senior" tabindex="9">
+        <label for="senior">Senior</label>
+        <br><br>
+        <p>Основна спеціалізація:</p>
+        <input type="radio" id="backend" name="specialty" value="backend" tabindex="10">
+        <label for="backend">Backend</label>
+        <input type="radio" id="frontend" name="specialty" value="frontend" checked tabindex="11">
+        <label for="frontend">Frontend</label>
+        <input type="radio" id="devops" name="specialty" value="devops" tabindex="12">
+        <label for="devops">DevOps</label>
+        <br><br>
+        <label>Технології, які ви використовуєте:</label><br>
+        <input type="checkbox" id="python" name="technology_python" value="python" tabindex="13">
+        <label for="python">Python</label><br>
+        <input type="checkbox" id="java" name="technology_java" value="java" tabindex="14">
+        <label for="java">Java</label><br>
+        <input type="checkbox" id="csharp" name="technology_csharp" value="csharp" tabindex="15">
+        <label for="csharp">C#</label><br>
+        <input type="checkbox" id="javascript" name="technology_javascript" value="javascript" tabindex="16">
+        <label for="javascript">JavaScript</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Напрям роботи</legend>
+        <label for="specialization">Оберіть напрям:</label>
+        <select id="specialization" name="specialization" tabindex="17">
+            <option value="web">Web Development</option>
+            <option value="mobile">Mobile Development</option>
+            <option value="ai" selected>Artificial Intelligence</option>
+            <option value="cybersecurity">Cybersecurity</option>
+            <option value="game">Game Development</option>
+        </select>
+        <br><br>
+        <label for="languages">Оберіть мови програмування:</label>
+        <select id="languages" name="languages" multiple tabindex="18">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="javascript">JavaScript</option>
+            <option value="cpp">C++</option>
+            <option value="go">Go</option>
+        </select>
+
+        <br><br>
+
+        <label for="it_area">Оберіть IT-напрям:</label>
+        <select id="it_area" name="it_area" tabindex="19">
+            <optgroup label="Development">
+                <option value="frontend">Frontend</option>
+                <option value="backend">Backend</option>
+                <option value="fullstack">Fullstack</option>
+            </optgroup>
+
+            <optgroup label="Data">
+                <option value="data_scientist">Data Scientist</option>
+                <option value="data_analyst">Data Analyst</option>
+                <option value="data_engineer">Data Engineer</option>
+            </optgroup>
+
+            <optgroup label="Infrastructure">
+                <option value="devops">DevOps</option>
+                <option value="cloud">Cloud Engineer</option>
+                <option value="sysadmin">System Administrator</option>
+            </optgroup>
+
+            <optgroup label="Security">
+                <option value="pentester">Pentester</option>
+                <option value="security_engineer">Security Engineer</option>
+                <option value="security_analyst">Security Analyst</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Фото профілю</legend>
+        <label for="photo">Завантажте фото профілю:</label>
+        <input type="file" id="photo" name="photo" value="" accept="image/*" multiple tabindex="21">
+    </fieldset>
+
+    <br>
+    <button type="submit" name="registration" value="register" tabindex="22">Зареєструватися</button>
+    <button type="reset" name="reset_form" value="reset" tabindex="23">Очистити форму</button>
+
+</form>
+
+</body>
+</html>
+
