@@ -1,0 +1,31 @@
+body{
+    font-size: 0;
+}
+
+div{
+    border: 3px solid black;
+    font: 20px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+}
+
+div:nth-child(1){
+    background-color: #4b8cd9;
+    height: 200px;
+    position: relative;
+}
+
+div:nth-child(2){
+    background-color: #00b050;
+    height: 150px;
+    position: relative;
+    top:50px;
+}
+
+div:nth-child(3){
+    background-color: #8ed8ec;
+    height: 100px;
+    position: relative;
+    top:100px;
+}

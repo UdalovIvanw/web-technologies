@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding-top: 60px;
+    font-family: Arial, sans-serif;
+    height: 5000px;
+}
+
+
+.nav-horizontal {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 250px;
+    background: #555;
+}
+
+.nav-horizontal ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-horizontal > ul {
+    overflow: visible;
+}
+
+.nav-horizontal > ul > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav-horizontal a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-horizontal a:hover,
+.nav-horizontal li:hover > a {
+    background: #4caf50;
+}
+
+.nav-horizontal ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    background: #555;
+}
+
+.nav-horizontal li:hover > ul {
+    display: block;
+}
+
+
+.nav-vertical {
+    position: fixed;
+    top: 250px;
+    left: 0;
+    width: 180px;
+    background: #0869ad;
+}
+
+.nav-vertical ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-vertical li {
+    position: relative;
+}
+
+.nav-vertical a {
+    display: block;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+.nav-vertical a:hover,
+.nav-vertical li:hover > a {
+    background: #4caf50;
+}
+
+.nav-vertical ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 180px;
+    width: 150px;
+    background: #0869ad;
+}
+
+.nav-vertical li:hover > ul {
+    display: block;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    font-size: 0;
+    vertical-align: middle;
+    margin-right: 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon-home {
+    background-image: url('icons/festival.svg');
+}
+
+.icon-flight {
+    background-image: url('icons/festival.svg');
+}
+
+.icon-search {
+    background-image: url('icons/airplane_ticket.svg');
+}
+
+.icon-mail {
+    background-image: url('icons/car_rental.svg');
+}
+
+.icon-info {
+    background-image: url('icons/casino.svg');
+}
+
+.icon-cofee {
+    background-image: url('icons/local_bar.svg');
+}
+

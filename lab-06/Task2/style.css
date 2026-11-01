@@ -1,0 +1,48 @@
+body{
+    font-size: 0;
+}
+
+div{
+    border: 3px solid black;
+    font: 20px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, sans-serif;
+    width: 150px;
+    text-align: center;
+}
+
+.block-menu{
+    background-color: #00b050;
+}
+
+.block-text{
+    background-color: #4b8cd9;
+    color: white;
+    opacity: 0;
+    height: 250px;
+}
+
+.block-1{
+    position: absolute;
+    top:10px;
+}
+.block-2{
+    position: absolute;
+    top:50px;
+}
+.block-3{
+    position: absolute;
+    left:170px;
+}
+.block-4{
+    position: absolute;
+    left:340px;
+}
+
+.block-1:hover ~ .block-3 {
+    opacity: 1;
+}
+
+.block-2:hover ~ .block-4 {
+    opacity: 1;
+}
+
+

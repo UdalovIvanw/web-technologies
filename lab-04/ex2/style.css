@@ -1,0 +1,32 @@
+*{
+    text-align: center;
+
+}
+
+mark{
+    background: #d6d61c;
+}
+
+hr {
+    height: 4px;
+    background-color: green;
+    border: none;
+    width: 60%;
+}
+
+.footer{
+    font-style: italic;
+    font-weight: 400;
+
+}
+
+#main-title {
+    color: red;
+}
+
+#ingredients-title {
+    font-style: italic;
+    font-weight: bold;
+}
+
+

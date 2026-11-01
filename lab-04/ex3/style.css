@@ -1,0 +1,27 @@
+a {
+    color: purple;
+}
+
+.main-link {
+    color: green;
+}
+
+.square-list {
+    list-style-type: square;
+}
+
+.icon-list {
+    list-style-image: url("https://raw.githubusercontent.com/Computer-Science-Department-ChNU/web-technologies/9fd2ee13a92b8bec08f2dc0d9ec254cf2931a1fe/html-css/labs/lab-04/materials/li.svg");
+}
+
+ul li ul {
+    list-style: none;
+}
+
+ul li:last-child a {
+    text-decoration: none;
+}
+
+ol{
+    list-style-position: inside;
+}

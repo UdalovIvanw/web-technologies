@@ -1,0 +1,52 @@
+.page-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper {
+    background: #ddbcbc;
+    float: right;
+    display: inline-block;
+    height: 50px;
+}
+
+img{
+    max-width: 10%;
+}
+
+.popup-wrapper{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+}
+
+.popup-content{
+    visibility: hidden;
+    position: absolute;
+    top:20px;
+}
+
+.popup-toggle-checkbox:checked ~ .popup-content {
+    visibility: visible;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
+
+.popup-content {
+    width: 100%;
+}
+
+.more-content{
+    visibility: hidden;
+    position: relative;
+    top:20px;
+}
+
+.more-toggle-checkbox:checked ~ .more-content {
+    visibility: visible;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+}
